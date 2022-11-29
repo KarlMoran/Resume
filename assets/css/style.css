@@ -1,0 +1,115 @@
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #000;
+    overflow: hidden;
+}
+  
+  /* Style the links inside the navigation bar */
+.topnav a {
+    float: right;
+    display: flex;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 22.5px 25px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+  /* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+  
+  /* Add an active class to highlight the current page */
+.topnav a.active {
+    background-color: #0ba1ab;
+    color: white;
+}
+  
+  /* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+.logo {
+    vertical-align: middle;
+    width: 70px;
+    height: 70px;
+    margin-left: 40px;
+}
+
+.align {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.home-content {
+    margin-top: 100px;
+    margin-left: 40px;
+}
+
+.float-container {
+    border: 3px solid #fff;
+    padding: 20px;
+}
+
+.float-child {
+    width: 50%;
+    float: left;
+    padding: 20px;
+    border: 2px solid rgb(255, 255, 255);
+    margin-top: 20px;
+}  
+
+.home-img {
+    --_g: 10% /45% 45% no-repeat linear-gradient(#000 0 0);
+    --m:
+      left   var(--_i,0%) top    var(--_g),
+      bottom var(--_i,0%) left   var(--_g),
+      top    var(--_i,0%) right  var(--_g),
+      right  var(--_i,0%) bottom var(--_g);
+    -webkit-mask: var(--m);
+            mask: var(--m);
+    filter: grayscale();
+    transition: .3s linear;
+    cursor: pointer;
+}
+
+.home-img:hover {
+    --_i: 10%;
+    filter: grayscale(0);
+}
+
+.green {
+    margin-top: 25px;
+    font-family: 'Syne Mono', monospace;
+}
+
+.work-heading {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    color: grey;
+    font-family: "Roboto",sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.heading-work {
+    justify-content: space-around;
+    padding: 4rem;
+}
+
+.heading-work, .work-heading {
+    display: flex;
+    align-items: center;
+}
+
+.work-heading:after, .work-heading:before {
+    content: "";
+    border-top: 1px solid #dcdcdc;
+    margin: 0 20px;
+    flex: 1 0 20px;
+}
+
